@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Iterator;
+
 
 public class fetchData extends AsyncTask<Void,Void,Void> {
 
@@ -63,7 +63,7 @@ public class fetchData extends AsyncTask<Void,Void,Void> {
 
     @Override
     protected void onPostExecute(Void aVoid) {
-        MainActivity.textview.setText(data);
+        MainActivity.summary.setText(data);
         super.onPostExecute(aVoid);
 
     }
